@@ -6,7 +6,14 @@ export default class HalloweenTimer extends Component {
     super();
 
     const now = new Date();
-    const halloweenDate = new Date(now.getFullYear(), 9, 31);
+    let halloweenDate;
+
+    if (now.getMonth() > 9) {
+      // already passed halloween, so use next year
+      halloweenDate = new Date(now.getFullYear() + 1, 9, 31);
+    } else {
+      halloweenDate = new Date(now.getFullYear(), 9, 31);
+    }
 
     const nowSeconds = Math.ceil(now.getTime() / 1000);
     const halloweenSeconds = Math.ceil(halloweenDate.getTime() / 1000);
