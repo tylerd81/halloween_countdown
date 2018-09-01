@@ -1,0 +1,14 @@
+.timer-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1em;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 15px;
+  border: solid 5px #ff7b00;
+  box-shadow: 0 0 15px #000;
+}
+
+.time-display {
+  color: #ff7b00;
+  text-align: center;
+}

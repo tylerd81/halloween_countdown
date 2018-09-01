@@ -1,0 +1,9 @@
+.halloween-background {
+  /* background-color: #000; */
+  margin: 0;
+  height: 100vh;
+  background-image: url("/pumpkin.jpg");
+  background-size: cover;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 1em;
+}
